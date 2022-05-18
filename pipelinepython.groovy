@@ -4,10 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                
+
                 git 'https://github.com/GuillermoRiosCortes/appMensaje.git'
-                echo 'prueba de stage'
-            
+
+            }
+            steps{
+                echo 'prueba prueba stage'
             }
         }
         stage('test'){
