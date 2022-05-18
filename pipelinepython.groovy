@@ -6,7 +6,7 @@ pipeline {
             steps {
                 
                 git 'https://github.com/GuillermoRiosCortes/appMensaje.git'
-
+                echo 'prueba de stage'
             
             }
         }
