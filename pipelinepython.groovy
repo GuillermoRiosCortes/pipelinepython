@@ -4,9 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-
-                git 'https://github.com/GuillermoRiosCortes/appMensaje.git'
-
+                git branch: 'main', url: 'https://github.com/GuillermoRiosCortes/appMensaje.git'
+                
             }
         }
         stage('test'){
