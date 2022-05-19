@@ -13,12 +13,5 @@ pipeline {
                 echo 'prueba prueba'
             }
         }
-        stage('Scan') {
-            steps {
-                withSonarQubeEnv('sonarscanner') {
-                    sh 'aplicaciones/ sonarqube'
-                }
-            }
-        }
      }
 }
