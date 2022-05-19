@@ -15,8 +15,8 @@ pipeline {
         }
         stage('scan'){
             steps {
-                withSonarQubeEnv('sonarscanner'){
-                    sh './gradlew sonarqube'
+                withSonarQubeEnv('sonarscanner') {
+                    sh '/aplicaciones'
                 }
             }
         }
