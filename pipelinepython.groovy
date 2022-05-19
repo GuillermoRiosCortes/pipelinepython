@@ -13,12 +13,12 @@ pipeline {
                 echo 'prueba prueba'
             }
         }
-        stage('scan'){
+        stage('Scan') {
             steps {
                 withSonarQubeEnv('sonarscanner') {
-                    sh '/aplicaciones'
+                    sh './aplicaciones sonarqube'
                 }
             }
         }
-    }
+     }
 }
